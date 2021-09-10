@@ -9,7 +9,7 @@ let cityName=document.getElementById("city-search");
 btn.addEventListener('click',GetData);
 
 function GetData(){
-const  url=`http://api.openweathermap.org/data/2.5/weather?q=${cityName.value}&units=metric&appid=8a89c504dea9c0e87f45c52a16fa4e2e`
+const  url=`http://api.openweathermap.org/data/2.5/weather?q=${cityName.value}&units=metric&appid="Insert you API key here"`;
 axios.get(url)
        .then(res=>{
        axios.get(url);
