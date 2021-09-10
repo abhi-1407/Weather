@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="Weather_pro.css">
+
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <div class="icon-container">
+            <canvas id="icon" width="100" height="100"></canvas>
+        </div>
+    </div>
+    <div class="content">
+        <div class="general-information">
+            <div class="status" id="top">Enter a location</div>
+            <div id="location">To Find The Weather</div>
+        </div>
+        <div class="detail-section">
+            <div class="detail">
+                <div class="title" >WIND SPEED</div>
+                <div class="value" id="wind">TBD</div>
+            </div>
+            <div class="detail">
+                <div class="title" >TEMPERATURE</div>
+                <div class="value" id="temperature">TBD</div>
+            </div>
+            <div class="detail">
+                <div class="title" >HUMIDITY</div>
+                <div class="value" id="humidity">TBD</div>
+            </div>
+        </div>
+    </div>
+    <div class="city-search-container">
+        <input type="text" id="city-search" placeholder="Enter Location"></input>
+        <button id="submit">SEARCH</button>
+    </div>
+</div> 
+</body>
+<script src="Weather_pro.js"></script>
+</html>
